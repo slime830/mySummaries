@@ -46,57 +46,57 @@ var $div = $("div");
 
     CSSの`display : none`と同じ効果を与える。
 
-- `show()`
+- `show()`  
     指定したオブジェクトを、表示する。
 
     指定したオブジェクトは、事前に隠されている(`display : none`など)必要がある
 
-- `fadeOut()` ・ `fadeOut(ms)`
+- `fadeOut()` ・ `fadeOut(ms)`  
     指定したオブジェクトを、フェードアウトさせ、隠す。
 
     引数として整数型の`ms`を与えると、フェードアウトのアニメーション時間を指定できる（ミリ秒）
 
-- `slideUp()` ・ `slideUp(ms)`
+- `slideUp()` ・ `slideUp(ms)`  
     指定したオブジェクトを、スライドアップさせ、隠す。
 
     `ms` は`fadeOut()`と同様。
 
-- `fadeIn()`
+- `fadeIn()`  
     指定したオブジェクトを、フェイドインさせ、表示する
 
     `ms`も使える
 
-- `slideDown()`
+- `slideDown()`  
     指定したオブジェクトを、スライドインさせ、表示する
 
     `ms`も使える
 
-- `css(property,value)`
+- `css(property,value)`  
     指定したオブジェクトにCSSを適用する。
 
     ```javascript
     $("h1").css("color","red");
     ```
 
-- `text(str)`
+- `text(str)`  
     指定したオブジェクト内のテキストを`str`に変更する。
 
-- `html(str)`
+- `html(str)`  
     指定したオブジェクト内のHTMLを、`str`に変更する。
 
 ## 子要素の検索
 
-- `find(selector)`
+- `find(selector)`  
     指定したオブジェクトの**子孫要素から**、`selector`にあたる要素を全て取得する。
 
-- `children(selector)`
+- `children(selector)`  
     指定したオブジェクトの**子要素**から、`selector`にあたる要素を全て取得する
 
 ## クラスの追加・削除
-- `addClass(className)`
+- `addClass(className)`  
     指定した要素に、`className`で指定したクラスを付与する。
 
-- `removeClass(className)` 
+- `removeClass(className)`  
     指定した要素から、`className`で指定したクラスを取り除く
 
 
@@ -114,11 +114,9 @@ $(セレクタ).イベント(funciton(){
 - `this` キーワード  
     処理内で、`$(this)`を指定すると、イベントが起こったオブジェクトを取得できる。
 
-- `click()`
-
+- `click()`  
 指定したオブジェクトがクリックされたときに、処理を行う
 
-- `hover()`
-
+- `hover()`  
 指定したオブジェクトにマウスが乗った時に、処理を行う
 
